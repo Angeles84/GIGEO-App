@@ -1,0 +1,26 @@
+.buttton {
+    margin-left: 0.6em;
+    color: $white;
+    font-size: $small;
+    transition: all 0.5s ease;
+}
+
+.section-btn_aqua {
+    padding: 0.5em 0.9em;
+    background-color: $aqua;
+    border-color: $aqua;
+    &:hover {
+        background-color: $aqua-dark;
+        border-color: $aqua-dark;
+    }
+}
+
+.section-btn_coral {
+    padding: 0.5em 1.3em;
+    background-color: $coral;
+    border-color: $coral;
+    &:hover {
+        background-color: $coral-dark;
+        border-color: $coral-dark;
+    }
+}
