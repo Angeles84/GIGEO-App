@@ -9945,7 +9945,6 @@ img {
 h2 {
   font-weight: 400;
   font-size: 24px;
-  padding-left: 0.7em;
 }
 
 h3 {
@@ -10039,7 +10038,6 @@ h4 {
   display: flex;
   justify-content: space-between;
   padding: 1em 2em;
-  border-bottom: 1px solid #BEC1BB;
 }
 
 .section_info {
@@ -10069,6 +10067,11 @@ h4 {
   padding-left: 1.5em;
 }
 
+@media (min-width: 576px) {
+  .section {
+    border-bottom: 1px solid #BEC1BB;
+  }
+}
 @media (min-width: 992px) {
   .section_buttons {
     padding-left: 4em;
@@ -10089,11 +10092,20 @@ h4 {
 .main p {
   color: #444749;
 }
+.main h2 {
+  text-align: center;
+}
 
 .article_column {
   padding-bottom: 2em;
 }
 
+@media (min-width: 576px) {
+  .main h2 {
+    text-align: left;
+    padding-left: 0.7em;
+  }
+}
 .buttton {
   margin-left: 0.6em;
   color: #FFF;
