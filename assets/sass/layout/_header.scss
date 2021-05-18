@@ -1,10 +1,7 @@
 
 .section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: space-between;
-    padding: 1em 2em;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .section_info {
@@ -14,15 +11,10 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-left: 2em;
+    justify-content: center;
 }
 
 .section_buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  align-self: center;
- 
   a {
     text-decoration: none;
     &:hover {
@@ -32,27 +24,29 @@
 }
 
 .section_summary {
-    padding-left: 1.5em;
+    justify-self: center; 
 }
 
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .section {
     border-bottom: 1px solid $gray;
-  }
-}
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: flex;
+    flex-wrap: nowrap;
 
-@media (min-width: 992px) {
-  .section_buttons {
-     padding-left: 4em;
-  }
-}
-
-@media (min-width: 1200px) {
-    .section_buttons {
-       padding-left: 9.5em;
-    }
     .section_info {
-      padding-left: 3.7em;
+      justify-content: flex-start;
     }
+
+    .section_buttons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      align-self: center;
+      text-align: right;
+    }
+  }
 }
